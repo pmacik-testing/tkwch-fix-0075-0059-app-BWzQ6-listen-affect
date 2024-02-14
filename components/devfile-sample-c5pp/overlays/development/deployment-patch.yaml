@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-c5pp
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkwch-fix-0075-0059-tenant/tkwch-fix-0075-0059-app/devfile-sample-c5pp@sha256:f0a8a69109cf15ee9033d5bee056030bd38823bd9bc5fad1f5f8fbb92ee1353a
+        name: my-nodejs
+        resources: {}
+status: {}
